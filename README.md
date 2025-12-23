@@ -3,7 +3,7 @@
 A real-time **multiplayer Slither.io–style game** built with **Unity**, featuring smooth player movement, snake growth, food collection, and real-time network synchronization.
 
 
-
+![alt text](image.png)
 ---
 
 ## 🎮 Features
