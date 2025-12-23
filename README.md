@@ -1,163 +1,155 @@
-<img width="512" height="307" alt="image" src="https://github.com/user-attachments/assets/8b7ef5a3-a920-4792-953f-7ec3c8a89da8" />🐍 Network Slither – Unity Multiplayer Project
+# 🐍 Network Slither – Unity Multiplayer Project
 
-A real-time multiplayer Slither.io-style game built with Unity, featuring smooth player movement, snake growth, food collection, and network synchronization.
-
-
-https://s.cafebazaar.ir/images/upload/screenshot/air.com.hypah.io.slither-94b2c072-8571-480c-82a8-a48d2d984ef6.png?x-img=v1%2Fresize%2Ch_600%2Clossless_false%2Foptimize
+A real-time **multiplayer Slither.io–style game** built with **Unity**, featuring smooth player movement, snake growth, food collection, and real-time network synchronization.
 
 
-🎮 Features
-Core Gameplay
 
-Real-time multiplayer snakes
+---
 
-Smooth directional movement
+## 🎮 Features
 
-Food spawning & consumption
+### Core Gameplay
 
-Snake growth mechanics
+- Real-time multiplayer snakes
+- Smooth directional movement
+- Food spawning & consumption
+- Snake growth mechanics
+- Collision detection
+- Death & respawn logic
 
-Collision detection
+### 🌐 Networking
 
-Death & respawn logic
+- Client–server architecture
+- Real-time transform synchronization
+- Interpolated movement for smooth visuals
+- Player join / leave handling
+- Basic server-authoritative logic
 
-Networking
+### 🖥️ UI & UX
 
-Client–server architecture
+- Player nickname input
+- Minimal HUD (score / snake length)
+- Camera follow system
+- Demo-friendly visuals
 
-Real-time transform synchronization
+---
 
-Interpolated movement for smooth visuals
+## 📸 Screenshots
 
-Player join / leave handling
+> 📌 **Tip:** Create a `Screenshots/` folder in your repo and export images from Unity at **1920×1080** for best quality.
 
-Server-authoritative logic (basic)
+### 🎮 Gameplay
 
-UI & UX
+- Top-down arena view
+- Multiple snakes in the same map
+- Food pellets scattered across the arena
 
-Player nickname input
+### 🌐 Multiplayer Sync
 
-Minimal HUD (score / snake length)
+- Real-time synced player movement
+- Smooth interpolation between network updates
+- Dynamic join & leave
 
-Camera follow system
+### 🖥️ HUD / UI
 
-Demo-friendly visuals
+- Player name display
+- Current length / score
+- Minimal and clean UI
 
-📸 Screenshots
-🎮 Gameplay
+### 🧪 Development / Editor View
 
-Top-down arena view
+- Unity Game View
+- Scene & object layout
+- Debugging and testing mode
 
-Multiple snakes in the same map
+---
 
-Food pellets scattered across the arena
+## 🧠 Tech Stack
 
-🌐 Multiplayer Sync
+| Component    | Technology                    |
+| ------------ | ----------------------------- |
+| Game Engine  | Unity 2021+ (LTS recommended) |
+| Language     | C#                            |
+| Networking   | Photon / Mirror / FishNet     |
+| Platform     | PC / WebGL (optional)         |
+| Architecture | Component-based               |
 
-Real-time synced player movement
+---
 
-Smooth interpolation between network updates
+## 🚀 Getting Started
 
-Dynamic join & leave
+### Prerequisites
 
-🖥️ HUD / UI
+- Unity Hub installed
+- Unity Editor **2021 LTS** or newer
+- Internet connection for multiplayer testing
 
-Player name
+### Setup
 
-Current length / score
-
-Minimal and clean UI
-
-🧪 Development / Editor View
-
-Unity Game View
-
-Scene & object layout
-
-Debugging and testing mode
-
-📌 Tip:
-Create a Screenshots/ folder in your repo and export images from Unity at 1920×1080 for best quality.
-
-🧠 Tech Stack
-Component	Technology
-Game Engine	Unity 2021+ (LTS recommended)
-Language	C#
-Networking	Photon / Mirror / FishNet
-Platform	PC / WebGL (optional)
-Architecture	Component-based
-
-
-🚀 Getting Started
-Prerequisites
-
-Unity Hub installed
-
-Unity Editor 2021 LTS or newer
-
-Internet connection for multiplayer testing
-
-Setup
-
-Clone the repository:
-
+```bash
 git clone https://github.com/xbabas55/network-slither-unity.git
+```
 
+1. Open **Unity Hub**
+2. Add and open the project
+3. Open the scene: `Assets/Scenes/Main.unity`
+4. Press **Play**
+5. Run multiple builds or editor instances to test multiplayer
 
-Open the project in Unity Hub
+---
 
-Open:
+## ⚙️ Configuration
 
-Assets/Scenes/Main.unity
+### Player Speed
 
-
-Press Play
-
-Run multiple builds or editor instances to test multiplayer
-
-⚙️ Configuration
-Player Speed
+```csharp
 [SerializeField] private float moveSpeed = 5f;
+```
 
-Initial Snake Length
+### Initial Snake Length
+
+```csharp
 [SerializeField] private int startLength = 5;
+```
 
-Max Players
+### Max Players
 
 Configured via the selected networking solution (Photon / Mirror / FishNet).
 
-🧪 Demo Limitations
+---
 
-No persistent user accounts
+## 🧪 Demo Limitations
 
-No matchmaking or ranking
+- No persistent user accounts
+- No matchmaking or ranking
+- No anti-cheat protection
+- Demo-grade assets only
+- Not production-ready
 
-No anti-cheat
+---
 
-Demo-grade assets only
+## 📈 Planned Improvements
 
-Not production-ready
+- Matchmaking & lobby system
+- Leaderboard
+- Mobile touch controls
+- Snake skin customization
+- Server-side validation
+- Spectator mode
 
-📈 Planned Improvements
+---
 
-Matchmaking & lobby system
+## 📄 License
 
-Leaderboard
+This project is provided for **educational and demonstration purposes**. You are free to modify and extend it for **personal or portfolio use**.
 
-Mobile touch controls
+---
 
-Skin customization
+## 👤 Author
 
-Server-side validation
+**Kaito Jhon**
 
-Spectator mode
+---
 
-📄 License
+⭐ If you find this project useful, consider starring the repository!
 
-This project is provided for educational and demonstration purposes.
-You are free to modify and extend it for personal or portfolio use.
-
-👤 Author
-
-Kaito Jhon
-Unity Game Developer
